@@ -1,0 +1,112 @@
+//Colors
+$primary-0: white;
+$primary-1: hsl(180, 66%, 49%);
+$primary-1-active: hsl(180, 80%, 49%);
+$primary-2: hsl(257, 27%, 26%);
+$secondary-0: hsl(0, 87%, 67%);
+$neutral-0: hsl(0, 0%, 75%);
+$neutral-1: hsl(257, 7%, 63%);
+$neutral-2: hsl(255, 11%, 22%);
+$neutral-3: hsl(260, 8%, 14%);
+$neutral-4: hsl(225, 33%, 95%);
+$neutral-5: hsla(258, 7%, 63%, 0.411);
+
+//Sizes, assuming 1rem = 16px
+$s-1: 0.0625rem; //1px
+$s-2: 0.125rem; //2px
+$s-4: 0.25rem; //4px
+$s-6: 0.375rem; //6px
+$s-8: 0.5rem; //8px
+$s-10: 0.625rem; //10px
+$s-12: 0.75rem; //12px
+$s-14: 0.875rem; //14px
+$s-15: 0.9375rem; //15px
+$s-16: 1rem; //16px
+$s-18: 1.125rem; //18px
+$s-20: 1.25rem; //20px
+$s-22: 1.375rem; //22px
+$s-24: 1.5rem; // 24px
+$s-26: 1.625rem; // 26px
+$s-28: 1.75rem; //28px
+$s-30: 1.875rem; //30px
+$s-32: 2rem; //32px
+$s-34: 2.125rem; //34px
+$s-36: 2.25rem; //36px
+$s-38: 2.375rem; //38px
+$s-40: 2.5rem; //40px
+$s-42: 2.625rem; //40px
+$s-44: 2.75rem; //44px
+$s-46: 2.875rem; //46px
+$s-48: 3rem; //48px
+$s-50: 3.125rem; //50px
+
+$app-width-0: 1200px; //1440px
+$app-padding: $s-40;
+$m-app-padding: $s-24;
+
+//Breakpoints
+$breakpoint-0: 1440px;
+$breakpoint-1: 1100px;
+$breakpoint-2: 992px;
+$breakpoint-3: 768px;
+$breakpoint-4: 576px;
+$breakpoint-mobile: 375px;
+
+@mixin for-size($size) {
+    @if $size == mobile {
+      @media (max-width: $breakpoint-mobile) { @content; }
+    } @else if $size == b4 {
+      @media (max-width: $breakpoint-4) { @content; }
+    } @else if $size == b3 {
+      @media (max-width: $breakpoint-3) { @content; }
+    } @else if $size == b2 {
+      @media (max-width: $breakpoint-2) { @content; }
+    } @else if $size == b1 {
+      @media (max-width: $breakpoint-1) { @content; }
+    } @else if $size == b0 {
+        @media (max-width: $breakpoint-0) { @content; }
+    }
+}
+
+//Reusable
+$circle-dia: 5rem; //80px
+$stat-box-margin: $s-16;
+$stat-box-margin-b2: $s-6;
+
+.app-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 $s-40;
+
+    @include for-size(mobile) {
+      padding: 0 $s-24;
+    }
+}
+
+
+
+.button-link {
+    background-color: $primary-1;
+    outline: none;
+    color: $primary-0;
+    font-weight: 700;
+    padding: 12px 40px;
+    border-radius: 34px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $s-18;
+
+    &:hover {
+      background-color: $primary-1-active;
+    }
+
+    @include for-size(b2) {
+      font-size: $s-16;
+    }
+
+    @include for-size(b4) {
+      font-size: $s-18;
+    }
+
+
+}

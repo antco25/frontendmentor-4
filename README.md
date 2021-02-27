@@ -1,24 +1,19 @@
-# fem-challenge-4
+# Front End Mentor Challenge 4
 
-## Project setup
-```
-yarn install
-```
+## About  
+Implementation of challenge from Front End Mentor.   
+[URL Shortening API Landing Page](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+-Desktop & Mobile Layouts  
+-Responsive   
+-Created with Vue & SASS
+-Used axios for API calls
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## How to run
 
-### Lints and fixes files
-```
-yarn lint
-```
+1 - Clone repo  
+2 - 'npm install'  
+3 - 'npm run serve'  
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Screenshots
+![](images/screen.gif)
