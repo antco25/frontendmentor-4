@@ -9,6 +9,10 @@ Implementation of challenge from Front End Mentor.
 -Created with Vue & SASS
 -Used axios for API calls
 
+## Links
+
+- Live Site URL: [https://antco25.github.io/frontendmentor-4/](https://antco25.github.io/frontendmentor-4/)
+
 ## How to run
 
 1 - Clone repo  
@@ -17,3 +21,7 @@ Implementation of challenge from Front End Mentor.
 
 ## Screenshots
 ![](images/screen.gif)
+
+## Author
+
+- [My Portfolio](https://antco25.github.io)
